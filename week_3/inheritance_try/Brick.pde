@@ -3,6 +3,7 @@ class Brick {
   float y;
   float w;
   float h;
+  boolean active;
 
   
   Brick(float x, float y, float w, float h) {
@@ -10,6 +11,7 @@ class Brick {
     this.y = y;
     this.w = w;
     this.h = h;
+    active = true;
    
   }
 

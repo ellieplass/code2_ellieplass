@@ -1,6 +1,6 @@
 Player player;
 Ball ball;
-ColorBrick;
+
 
 Brick[][] bricks = new Brick[10][5];
 
@@ -19,9 +19,9 @@ void setup() {
       if( r < 0.3){
         //why is this happening? I tried adding it at the top and still nothing
         // very confused
-        bricks[i][j] = new ColorBrick();
+        bricks[i][j] = new ColorBrick(5 + i * 90,50 + j * 40, 80, 20);
       }else{
-        bricks[i][j] = new op_brick();
+        bricks[i][j] = new op_brick(5 + i * 90,50 + j * 40, 80, 20);
         
       }
       
@@ -50,10 +50,10 @@ void draw() {
 
   for (int i = 0; i < bricks.length; i++) {
     for (int j = 0; j < bricks[0].length; j++) {
-      if (op_brick[i][j].active = false) {
+      if (bricks[i][j].active) {
         bricks[i][j].display();
         if (ball.didCollideWithBrick(bricks[i][j])) {
-          op_brick[i][j].active = true;
+          bricks[i][j].active = false;
         }
       }
     }

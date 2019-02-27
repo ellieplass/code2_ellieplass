@@ -9,6 +9,7 @@ class op_brick extends Brick {
   void display(){
     rectMode(CORNER);
     stroke(255);
+    fill(0);
     rect(x, y, w, h); 
   }
   

@@ -1,0 +1,28 @@
+{
+  "descriptions": [
+    "Welcome to Code Betting! You need 21 to win.",
+    "Your card is a seven. What do you do next?",
+    "Wow, thanks for asking nicely? Luck doesn't care about being nice. You draw a king.",
+    "Next card is a ten! What do you do? You need a 4 to win.",
+    "Congrats! The dealer deals a four.",
+    "Draw a two. So close. That's what you get for being nice.",
+    "Good choice. No going back now."
+  ],
+  "options": [
+    ["Turn card over."],
+    ["Ask for a deal.", "Ask nicely for a deal.", "Fold and bow out of the game."],
+    ["Take a long shot a draw.", "Fold and try again."],
+    ["Increase your bet and get a deal.", "Fold and take your money back."],
+    ["Play again?", "Quit gambling forever and focus on your friends and family."],
+    ["Yeah right!"]
+  ],
+  "optionTargets": [
+    [1],
+    [3, 2, 0],
+    [4, 0],
+    [5, 0],
+    [0, 6],
+    [0]
+  ],
+
+}
